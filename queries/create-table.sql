@@ -10,5 +10,5 @@ CREATE TABLE health(
     GestationalDiabetes INT,
     MentalHealth INT,
     HeartRate INT,
-    RiskLevl VARCHAR(255)
+    RiskLevel VARCHAR(255)
 );
