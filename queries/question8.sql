@@ -1,0 +1,2 @@
+SELECT COUNT(*) FROM health
+WHERE bs > 140;

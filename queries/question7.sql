@@ -1,0 +1,1 @@
+SELECT AVG(bs) AS avg_blood_sugar FROM health;

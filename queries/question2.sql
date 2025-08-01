@@ -1,4 +1,3 @@
---How many patients are classified as "High" risk versus "Low" risk?
-SELECT risklevel,COUNT(*) AS count FROM health 
-GROUP BY risklevel
-ORDER BY count DESC;
+SELECT MIN(age) AS minimum_age,MAX(age) AS maximum_age,
+(MAX(age)-MIN(age)) AS age_range
+FROM health;
