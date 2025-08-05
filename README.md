@@ -55,7 +55,7 @@ CREATE TABLE health(
 );
 ```
 # The Analysis
-### Which blood pressure type (systolic or diastolic) shows the strongest correlation with risk level?
+#### Which blood pressure type (systolic or diastolic) shows the strongest correlation with risk level?
 ```python
 import pandas as pd
 
@@ -87,7 +87,7 @@ else:
     print("➡️ Diastolic BP has a stronger correlation with Risk Level.")
 
 ```
-### Is there a trend between age and risk level?
+#### Is there a trend between age and risk level?
 ```python
 import pandas as pd
 
@@ -107,12 +107,12 @@ correlation_age_risk = df['age'].corr(df['risk_numeric'])
 print(f"Correlation between Age and Risk Level: {correlation_age_risk:.3f}")
 
 ```
-### How many mothers have blood sugar above 140 mg/dL?
+#### How many mothers have blood sugar above 140 mg/dL?
 ```sql
 SELECT COUNT(*) FROM health
 WHERE bs > 140;
 ```
-### Do mothers with high risk levels have significantly different heart rates than those with low risk?
+#### Do mothers with high risk levels have significantly different heart rates than those with low risk?
 ```sql
 SELECT risklevel,
 COUNT(*) AS total_mothers,
